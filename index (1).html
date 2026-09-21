@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chand Battery Traders | Car, Solar &amp; UPS Batteries all over in Pakistan</title>
+<meta name="description" content="Chand Battery Traders, Baldia Chowk, Kasur. Osaka, Phoenix, AGS and Alaska car, solar and UPS batteries. See the price list, then call or WhatsApp 0330-6575575.">
+<meta name="theme-color" content="#0E1730">
+<meta property="og:title" content="Chand Battery Traders | Car, Solar &amp; UPS Batteries all over in Pakistan">
+<meta property="og:description" content="Car, solar and UPS batteries. Full price list, battery testing and charging.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/favicon-64.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&family=Noto+Naskh+Arabic:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@500;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Chand Battery Traders",
+  "alternateName": "چاند بیٹری ٹریڈرز",
+  "description": "Car, solar and UPS batteries. Battery testing and charging available.",
+  "telephone": ["+92-330-6575575", "+92-307-7080970"],
+  "image": "assets/shop-front.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Baldia Chowk, Naseem Hayat Road, near Islamia Boys School",
+    "addressLocality": "Kasur",
+    "postalCode": "55050",
+    "addressCountry": "PK"
+  }
+}
+</script>
+
+<style>
+/* ============ 1. DESIGN TOKENS (change colours & fonts here) ============ */
+:root{
+  --ink:#0E1730;        /* darkest navy: top bar, hero, footer */
+  --navy:#16224A;       /* nav bar */
+  --gold:#C9A24A;       /* brand gold from the visiting card */
+  --gold-soft:#F3E7C4;
+  --bg:#F2F4F8;
+  --card:#FFFFFF;
+  --line:#DCE1EB;
+  --text:#1B2438;
+  --muted:#5A657C;
+  --wa:#148F48;         /* WhatsApp green (dark enough for white text) */
+  --radius:12px;
+
+  --body:"Barlow","Noto Naskh Arabic",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --display:"Barlow Condensed","Noto Naskh Arabic",system-ui,sans-serif;
+  --num:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+}
+html[lang="ur"]{
+  --body:"Noto Naskh Arabic","Barlow",system-ui,sans-serif;
+  --display:"Noto Nastaliq Urdu","Noto Naskh Arabic",serif;
+}
+
+/* ============ 2. BASE ============ */
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:var(--body);color:var(--text);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased}
+html[lang="ur"] body{line-height:1.85}
+img,svg,video,iframe{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit;color:inherit}
+ul{list-style:none;padding:0}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{width:min(1200px,100% - 32px);margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+h1,h2,h3{font-family:var(--display);line-height:1.1;letter-spacing:.005em}
+html[lang="ur"] h1,html[lang="ur"] h2{line-height:1.9}
+h2{font-size:clamp(1.75rem,3.2vw,2.4rem);font-weight:700}
+.icon{width:20px;height:20px;flex:none;fill:currentColor}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 16px;border-radius:10px;font-weight:600;border:1px solid transparent;cursor:pointer;line-height:1.2;transition:background-color .15s,border-color .15s}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:#D8B45C}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:#107a3d}
+.btn-line{background:#fff;border-color:var(--line)}
+.btn-line:hover{border-color:var(--navy)}
+
+/* ============ 3. TOP BAR ============ */
+.topbar{background:var(--ink);color:#C9D1E4;font-size:.875rem}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:38px}
+.topbar a:hover{color:#fff}
+.topbar .left,.topbar .right{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.topbar .icon{width:15px;height:15px;color:var(--gold)}
+.topbar .item{display:inline-flex;align-items:center;gap:6px}
+.lang-btn{border:1px solid rgba(255,255,255,.28);background:transparent;color:#fff;border-radius:999px;padding:2px 14px;cursor:pointer;font-weight:600}
+.lang-btn:hover{border-color:var(--gold);color:var(--gold)}
+
+/* ============ 4. HEADER ============ */
+.site-header{background:#fff;border-bottom:1px solid var(--line)}
+.site-header .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;padding-block:14px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo img{width:52px;height:52px;border-radius:12px;border:1px solid var(--gold);background:var(--ink)}
+.logo .name{display:block;font-family:var(--display);font-weight:700;font-size:1.45rem;line-height:1.1;color:var(--ink)}
+html[lang="ur"] .logo .name{font-size:1.35rem;line-height:1.7}
+.logo .sub{display:block;font-size:.8rem;color:var(--muted);line-height:1.3}
+.search{position:relative;max-width:560px;width:100%;justify-self:center}
+.search input{width:100%;padding:12px 16px;padding-inline-end:46px;border:1.5px solid var(--line);border-radius:999px;background:var(--bg);font-size:1rem}
+.search input:focus{border-color:var(--navy);background:#fff;outline:none;box-shadow:0 0 0 3px rgba(201,162,74,.35)}
+.search .icon{position:absolute;inset-inline-end:16px;top:50%;translate:0 -50%;color:var(--muted);pointer-events:none}
+.head-actions{display:flex;gap:10px}
+
+/* ============ 5. NAV ============ */
+.mainnav{background:var(--navy);position:sticky;top:0;z-index:50}
+.mainnav ul{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.mainnav ul::-webkit-scrollbar{display:none}
+.mainnav a{display:block;white-space:nowrap;padding:14px 16px;color:#DDE3F2;font-weight:500;border-bottom:3px solid transparent}
+.mainnav a:hover{color:#fff;border-bottom-color:var(--gold)}
+
+/* ============ 6. HERO ============ */
+.hero{position:relative;background-color:var(--ink);color:#fff;overflow:hidden;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260' viewBox='0 0 260 260' fill='none' stroke='%23C9A24A' stroke-opacity='.17' stroke-width='1.3'%3E%3Cpath d='M0 64h74l22 22h64M0 160h44l26-26h84l22 22h80M130 0v54l22 22M216 260v-64l-20-20h-70'/%3E%3Ccircle cx='74' cy='64' r='3.5'/%3E%3Ccircle cx='160' cy='86' r='3.5'/%3E%3Ccircle cx='154' cy='134' r='3.5'/%3E%3Ccircle cx='126' cy='176' r='3.5'/%3E%3C/svg%3E")}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-block:56px}
+.hero h1{font-size:clamp(2.3rem,5.2vw,4rem);font-weight:700;margin-bottom:14px}
+html[lang="ur"] .hero h1{font-size:clamp(1.8rem,4vw,3rem)}
+.hero p.lead{max-width:34rem;color:#C9D1E4;font-size:1.1rem;margin-bottom:26px}
+.finder{background:#fff;color:var(--text);border-radius:var(--radius);padding:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:640px}
+.finder h2{grid-column:1/-1;font-size:1.25rem;color:var(--ink)}
+.finder label{display:grid;gap:4px;font-size:.85rem;color:var(--muted);font-weight:500}
+.finder select{padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--text);font-size:1rem}
+.finder .btn{grid-column:1/-1}
+.hero-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+.hero-photos figure{border-radius:16px;overflow:hidden;border:2px solid var(--gold);background:#000;aspect-ratio:9/16}
+.hero-photos figure:nth-child(2){margin-top:44px}
+.hero-photos img{width:100%;height:100%;object-fit:cover}
+
+/* ============ 7. TRUST STRIP ============ */
+.trust{background:#fff;border-bottom:1px solid var(--line)}
+.trust ul{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust li{display:flex;gap:12px;align-items:flex-start;padding:20px 18px;border-inline-end:1px solid var(--line)}
+.trust li:last-child{border-inline-end:0}
+.trust .icon{width:30px;height:30px;color:var(--gold);margin-top:2px}
+.trust b{display:block;font-weight:600;color:var(--ink)}
+.trust span{font-size:.9rem;color:var(--muted);line-height:1.4;display:block}
+
+/* ============ 8. SHOP (price list) ============ */
+.shop-section{padding-block:48px 64px}
+.section-head{margin-bottom:22px}
+.section-head p{color:var(--muted);margin-top:6px}
+.shop{display:grid;grid-template-columns:270px 1fr;gap:26px;align-items:start}
+.filters{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:8px 18px 18px;position:sticky;top:64px;max-height:calc(100vh - 80px);overflow-y:auto}
+.filters .f-head{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+.filters .f-head h3{font-size:1.3rem}
+.link-btn{background:none;border:0;color:var(--navy);font-weight:600;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:0}
+.f-group{border-top:1px solid var(--line);padding-block:14px}
+.f-group h4{font-size:.95rem;font-weight:600;margin-bottom:10px;color:var(--ink)}
+.check{display:flex;align-items:center;gap:10px;padding:5px 0;cursor:pointer}
+.check input{width:18px;height:18px;accent-color:var(--navy)}
+.check .count{margin-inline-start:auto;color:var(--muted);font-size:.85rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:3px 12px;cursor:pointer;font-size:.9rem;font-weight:500}
+.chip:hover{border-color:var(--navy)}
+.chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.price-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.price-row input{width:100%;padding:8px 10px;border:1.5px solid var(--line);border-radius:8px}
+
+.toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:16px}
+.toolbar .result-count{color:var(--muted)}
+.toolbar .sort{display:flex;align-items:center;gap:8px}
+.toolbar select{padding:8px 12px;border:1.5px solid var(--line);border-radius:10px;background:#fff}
+.filters-toggle{display:none}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:border-color .15s}
+.card:hover{border-color:var(--brand,var(--navy))}
+.art{position:relative;background:#EEF1F7;background:color-mix(in srgb,var(--brand) 10%,#fff);padding:36px 18px 8px}
+.art svg{width:100%;height:auto}
+.plates-tag{position:absolute;top:10px;inset-inline-start:10px;background:var(--ink);color:var(--gold);font-size:.78rem;font-weight:600;padding:2px 9px;border-radius:6px}
+.card .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:2px;flex:1}
+.card .brand{font-size:.85rem;color:var(--brand);font-weight:600}
+.card .model{font-family:var(--num);font-size:1.6rem;font-weight:600;color:var(--ink);line-height:1.15}
+.card .ah{font-size:.92rem;color:var(--muted)}
+.card .ah b{font-family:var(--num);font-size:1.1rem;color:var(--text);font-weight:600}
+.card .price{margin-top:8px;font-family:var(--num);font-size:1.85rem;font-weight:700;color:var(--ink);line-height:1.1}
+.card .price small{font-size:.95rem;font-weight:600;color:var(--muted);margin-inline-end:4px}
+.card .actions{display:flex;gap:8px;margin-top:auto;padding-top:14px}
+.card .actions .btn-wa{flex:1;min-width:0;padding:10px 8px;font-size:.92rem;gap:6px}
+.card .actions .btn-line{padding:10px 11px}
+.empty{grid-column:1/-1;background:#fff;border:1px dashed var(--line);border-radius:var(--radius);padding:40px 20px;text-align:center}
+.empty h3{font-size:1.5rem;margin-bottom:6px}
+.empty p{color:var(--muted);margin-bottom:16px}
+.empty .btn{margin:4px}
+.price-note{margin-top:22px;color:var(--muted);font-size:.92rem}
+
+/* ============ 9. SERVICES (dark band, no cards) ============ */
+.services{background:var(--ink);color:#fff;padding-block:52px}
+.services h2{margin-bottom:26px}
+.services ul{display:grid;grid-template-columns:repeat(4,1fr)}
+.services li{padding:6px 24px;border-inline-start:1px solid rgba(201,162,74,.35)}
+.services li:first-child{border-inline-start:0;padding-inline-start:0}
+.services .icon{width:36px;height:36px;color:var(--gold);margin-bottom:12px}
+.services h3{font-size:1.4rem;margin-bottom:6px}
+html[lang="ur"] .services h3{line-height:1.8}
+.services p{color:#C9D1E4;font-size:.98rem}
+
+/* ============ 10. SHOP TOUR ============ */
+.tour{padding-block:60px}
+.tour .wrap{display:grid;grid-template-columns:1fr auto;gap:44px;align-items:center}
+.tour p.lead{color:var(--muted);max-width:32rem;margin:10px 0 24px}
+.tour .photos{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:520px}
+.tour .photos img{border-radius:var(--radius);border:1px solid var(--line);aspect-ratio:4/5;object-fit:cover;width:100%}
+.phone-frame{width:min(290px,100%);border:7px solid var(--ink);border-radius:26px;overflow:hidden;background:#000;box-shadow:0 12px 30px rgba(14,23,48,.25)}
+.phone-frame video{width:100%;aspect-ratio:9/16;object-fit:cover}
+
+/* ============ 11. VISIT ============ */
+.visit{padding-block:10px 64px}
+.visit .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:stretch}
+.visit-info{display:grid;gap:18px;align-content:start}
+.info-row{display:flex;gap:14px}
+.info-row .icon{width:24px;height:24px;color:var(--gold);margin-top:3px}
+.info-row b{display:block;font-weight:600;color:var(--ink)}
+.info-row a.tel{font-family:var(--num);font-size:1.4rem;font-weight:600;display:block;color:var(--navy)}
+.info-row a.tel:hover{color:var(--gold)}
+.visit .btns{display:flex;flex-wrap:wrap;gap:10px}
+.map{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;min-height:340px;background:#dfe4ee}
+.map iframe{width:100%;height:100%;min-height:340px;border:0}
+
+/* ============ 12. FOOTER ============ */
+footer{background:var(--ink);color:#C9D1E4;padding-top:44px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px;padding-bottom:34px}
+footer h3{color:#fff;font-size:1.2rem;margin-bottom:12px}
+footer li{margin-bottom:6px}
+footer a:hover{color:var(--gold)}
+footer .logo .name{color:#fff}
+footer .logo .sub{color:#9AA5BF}
+footer .about{margin-top:14px;max-width:28rem;font-size:.95rem}
+footer .copy{border-top:1px solid rgba(255,255,255,.14);padding-block:16px;font-size:.88rem;color:#9AA5BF}
+
+/* ============ 13. FLOATING BUTTONS ============ */
+.fab{position:fixed;inset-inline-end:18px;bottom:18px;z-index:60;width:56px;height:56px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.28)}
+.fab .icon{width:30px;height:30px}
+.mobile-bar{display:none}
+
+/* ============ 14. RESPONSIVE ============ */
+@media (max-width:1000px){
+  .hero .wrap{grid-template-columns:1fr;padding-block:40px}
+  .hero-photos{max-width:440px}
+  .trust ul{grid-template-columns:1fr 1fr}
+  .trust li:nth-child(2){border-inline-end:0}
+  .trust li:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .services ul{grid-template-columns:1fr 1fr;row-gap:28px}
+  .services li:nth-child(3){border-inline-start:0;padding-inline-start:0}
+  .tour .wrap,.visit .wrap{grid-template-columns:1fr}
+  .phone-frame{justify-self:center}
+}
+@media (max-width:860px){
+  .shop{grid-template-columns:1fr}
+  .filters{position:static;display:none}
+  .filters.open{display:block}
+  .filters-toggle{display:inline-flex}
+  .site-header .wrap{grid-template-columns:1fr auto}
+  .search{grid-column:1/-1;order:3;max-width:none}
+  footer .cols{grid-template-columns:1fr 1fr}
+  footer .cols>div:first-child{grid-column:1/-1}
+}
+@media (max-width:620px){
+  .topbar .addr{display:none}
+  .logo img{width:44px;height:44px}
+  .logo .name{font-size:1.15rem}
+  .head-actions .btn span{display:none}
+  .grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .card .body{padding:12px}
+  .card .model{font-size:1.35rem}
+  .card .price{font-size:1.55rem}
+  .card .actions .btn-wa span{display:none}
+  .finder{grid-template-columns:1fr}
+  .services ul{grid-template-columns:1fr}
+  .services li{border-inline-start:0;padding-inline:0}
+  .trust ul{grid-template-columns:1fr}
+  .trust li{border-inline-end:0;border-bottom:1px solid var(--line)}
+  .fab{display:none}
+  body{padding-bottom:64px}
+  .mobile-bar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;inset-inline:0;bottom:0;z-index:60;background:#fff;border-top:1px solid var(--line);padding:8px 12px}
+  .mobile-bar .btn{padding:12px}
+  .mobile-bar .btn-gold{background:var(--ink);color:#fff}
+  footer .cols{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+
+<body>
+
+<!-- SVG icon sprite (icons are reused with <use href="#i-...">) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.57 3.6a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.89 9.89-9.89 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.88 9.88zM20.46 3.49A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.49-8.41z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.49 4.49 0 0 1 9.5 14z"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24"><path d="M3 5h18v2l-7 7v6l-4-2v-4L3 7z"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 11l1.5-4.5A2 2 0 0 1 8.4 5h7.2a2 2 0 0 1 1.9 1.5L19 11h.5A1.5 1.5 0 0 1 21 12.5V17a1 1 0 0 1-1 1h-1a2 2 0 0 1-4 0H9a2 2 0 0 1-4 0H4a1 1 0 0 1-1-1v-4.5A1.5 1.5 0 0 1 4.5 11zm2.1 0h9.8l-1-3H8.1zM7 16.3a1 1 0 1 0 .001 0zm10 0a1 1 0 1 0 .001 0z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM11 1h2v3h-2zm0 19h2v3h-2zM1 11h3v2H1zm19 0h3v2h-3zM4.2 5.6l1.4-1.4 2.1 2.1-1.4 1.4zm12.1 12.1l1.4-1.4 2.1 2.1-1.4 1.4zM5.6 19.8l-1.4-1.4 2.1-2.1 1.4 1.4zM18.4 4.2l1.4 1.4-2.1 2.1-1.4-1.4z"/></symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24"><path d="M16 7V2h-2v5h-4V2H8v5H6v5a5 5 0 0 0 4 4.9V22h4v-5.1a5 5 0 0 0 4-4.9V7z"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5zm-1.2 15.2L6.6 12l1.4-1.4 2.8 2.8 5.2-5.2L17.4 10z"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 4h16l1 5a3 3 0 0 1-5.5 1.6 3 3 0 0 1-5 0A3 3 0 0 1 3 9zm1 7.5V20h5v-5h4v5h5v-8.5a4.8 4.8 0 0 1-.5.05A4.5 4.5 0 0 1 15 10.4a4.5 4.5 0 0 1-3 1.15 4.5 4.5 0 0 1-3-1.15 4.5 4.5 0 0 1-3.5 1.15A4.8 4.8 0 0 1 5 11.5z"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M21.4 11.6l-9-9A2 2 0 0 0 11 2H4a2 2 0 0 0-2 2v7c0 .5.2 1 .6 1.4l9 9a2 2 0 0 0 2.8 0l7-7a2 2 0 0 0 0-2.8zM6.5 8A1.5 1.5 0 1 1 6.5 5a1.5 1.5 0 0 1 0 3z"/></symbol>
+</svg>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="left">
+      <a class="item" href="tel:+923306575575"><svg class="icon"><use href="#i-phone"/></svg><span class="ltr">0330-6575575</span></a>
+      <a class="item" href="tel:+923077080970"><svg class="icon"><use href="#i-phone"/></svg><span class="ltr">0307-7080970</span></a>
+    </div>
+    <div class="right">
+      <span class="item addr"><svg class="icon"><use href="#i-pin"/></svg><span data-i18n="top_addr">Baldia Chowk, Naseem Hayat Road, Kasur</span></span>
+      <button class="lang-btn" id="langBtn" type="button" aria-label="Switch language">اردو</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#top" id="top">
+      <span>
+        <span class="name" data-i18n="brand_name">Chand Battery Traders</span>
+        <span class="sub" data-i18n="brand_sub">چاند بیٹری ٹریڈرز</span>
+      </span>
+    </a>
+
+    <div class="search">
+      <label class="sr-only" for="searchInput" data-i18n="search_label">Search batteries</label>
+      <input id="searchInput" type="search" autocomplete="off" data-i18n-ph="search_ph" placeholder="Search model or brand">
+      <svg class="icon"><use href="#i-search"/></svg>
+    </div>
+
+    <div class="head-actions">
+      <a class="btn btn-gold" href="tel:+923306575575"><svg class="icon"><use href="#i-phone"/></svg><span data-i18n="btn_call">Call</span></a>
+      <a class="btn btn-wa" href="https://wa.me/923306575575" target="_blank" rel="noopener"><svg class="icon"><use href="#i-wa"/></svg><span data-i18n="btn_wa">WhatsApp</span></a>
+    </div>
+  </div>
+</header>
+
+<nav class="mainnav" aria-label="Main">
+  <div class="wrap">
+    <ul>
+      <li><a href="#top" data-i18n="nav_home">Home</a></li>
+      <li><a href="#prices" data-i18n="nav_prices">Price list</a></li>
+      <li><a href="#services" data-i18n="nav_services">Services</a></li>
+      <li><a href="#tour" data-i18n="nav_tour">Shop tour</a></li>
+      <li><a href="#visit" data-i18n="nav_visit">Visit us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1 data-i18n="hero_title">Car, solar and UPS batteries all over in Pakistan</h1>
+      <p class="lead" data-i18n="hero_lead">Osaka, Phoenix, AGS and Alaska. Check the price list, then call or WhatsApp to confirm the rate.</p>
+
+      <form class="finder" id="finder">
+        <h2 data-i18n="finder_title">Find your battery</h2>
+        <label><span data-i18n="f_brand">Brand</span>
+          <select id="fBrand"></select>
+        </label>
+        <label><span data-i18n="f_ah">Capacity</span>
+          <select id="fAh"></select>
+        </label>
+        <label><span data-i18n="f_plates">Plates</span>
+          <select id="fPlates"></select>
+        </label>
+        <button class="btn btn-gold" type="submit" data-i18n="finder_btn">Show batteries</button>
+      </form>
+    </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust" aria-label="Why choose us">
+  <div class="wrap">
+    <ul>
+      <li><svg class="icon"><use href="#i-store"/></svg><div><b data-i18n="t1_h">Wholesale dealer</b><span data-i18n="t1_p">Car, solar and UPS batteries</span></div></li>
+      <li><svg class="icon"><use href="#i-shield"/></svg><div><b data-i18n="t2_h">All major brands</b><span data-i18n="t2_p">Deep cycle and starter batteries</span></div></li>
+      <li><svg class="icon"><use href="#i-bolt"/></svg><div><b data-i18n="t3_h">Testing and charging</b><span data-i18n="t3_p">Available at the shop</span></div></li>
+      <li><svg class="icon"><use href="#i-tag"/></svg><div><b data-i18n="t4_h">Confirm the rate</b><span data-i18n="t4_p">Prices can change. Call before you visit.</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PRICE LIST ============ -->
+<section class="shop-section" id="prices">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 data-i18n="shop_title">Battery price list</h2>
+      <p data-i18n="shop_sub">Prices in Pakistani rupees (Rs.), listed by number of plates.</p>
+    </div>
+
+    <div class="shop">
+      <aside class="filters" id="filters" aria-label="Filters"></aside>
+
+      <div>
+        <div class="toolbar">
+          <button class="btn btn-line filters-toggle" id="filtersToggle" type="button"><svg class="icon"><use href="#i-filter"/></svg><span data-i18n="filters">Filters</span><span id="filterBadge"></span></button>
+          <p class="result-count" id="resultCount" aria-live="polite"></p>
+          <div class="sort">
+            <label for="sortSel" data-i18n="sort_label">Sort by</label>
+            <select id="sortSel"></select>
+          </div>
+        </div>
+        <div class="grid" id="grid"></div>
+        <p class="price-note" data-i18n="price_note">Prices are a guide and can change. Please confirm the latest rate by call or WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="wrap">
+    <h2 data-i18n="svc_title">What we sell and do</h2>
+    <ul>
+      <li><svg class="icon"><use href="#i-car"/></svg><h3 data-i18n="s1_h">Car batteries</h3><p data-i18n="s1_p">Starter batteries for every type of car.</p></li>
+      <li><svg class="icon"><use href="#i-sun"/></svg><h3 data-i18n="s2_h">Solar batteries</h3><p data-i18n="s2_p">Deep cycle batteries for solar systems.</p></li>
+      <li><svg class="icon"><use href="#i-plug"/></svg><h3 data-i18n="s3_h">UPS batteries</h3><p data-i18n="s3_p">Batteries for UPS and inverter backup.</p></li>
+      <li><svg class="icon"><use href="#i-bolt"/></svg><h3 data-i18n="s4_h">Testing and charging</h3><p data-i18n="s4_p">Bring your battery in and we will test and charge it.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ SHOP TOUR ============ -->
+<section class="tour" id="tour">
+  <div class="wrap">
+    <div>
+      <h2 data-i18n="tour_title">A look inside the shop</h2>
+      <p class="lead" data-i18n="tour_p">Racks stocked with Osaka, Phoenix, AGS, Alaska and more. Come to Baldia Chowk and see the batteries in person.</p>
+      <div class="photos">
+        <img src="assets/shop-shelves.jpg" alt="Shelves stocked with Osaka, Phoenix and Alaska batteries" loading="lazy">
+        <img src="assets/shop-front.jpg" alt="Shop entrance with Osaka and Phoenix battery boxes" loading="lazy">
+      </div>
+    </div>
+    <div class="phone-frame">
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISIT ============ -->
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div class="visit-info">
+      <h2 data-i18n="visit_title">Visit the shop</h2>
+      <div class="info-row"><svg class="icon"><use href="#i-pin"/></svg>
+        <div><b data-i18n="addr_label">Address</b><span data-i18n="addr_full">Baldia Chowk, Naseem Hayat Road, near Islamia Boys School, Kasur</span></div></div>
+      <div class="info-row"><svg class="icon"><use href="#i-phone"/></svg>
+        <div><b data-i18n="phone_label">Phone</b>
+          <a class="tel ltr" href="tel:+923306575575">0330-6575575</a>
+          <a class="tel ltr" href="tel:+923077080970">0307-7080970</a></div></div>
+      <div class="btns">
+        <a class="btn btn-wa" href="https://wa.me/923306575575" target="_blank" rel="noopener"><svg class="icon"><use href="#i-wa"/></svg><span data-i18n="btn_wa">WhatsApp</span></a>
+        <a class="btn btn-line" href="https://maps.app.goo.gl/AdXVPLhwq9o2vb7t8" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg><span data-i18n="btn_dir">Get directions</span></a>
+      </div>
+    </div>
+    <div class="map">
+      <iframe title="Chand Battery Traders on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=Chand+Battery+Traders,+Baldya+Chowk,+Naseem+Hayat+Rd,+Kasur&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="logo">
+          <img src="assets/logo.png" alt="" width="52" height="52">
+          <span><span class="name" data-i18n="brand_name">Chand Battery Traders</span><span class="sub" data-i18n="brand_sub">چاند بیٹری ٹریڈرز</span></span>
+        </div>
+        <p class="about" data-i18n="foot_about">Solar system, UPS and car batteries. Deep cycle and starter batteries from all major brands, with testing and charging at the shop.</p>
+      </div>
+      <div>
+        <h3 data-i18n="foot_links">Quick links</h3>
+        <ul>
+          <li><a href="#prices" data-i18n="nav_prices">Price list</a></li>
+          <li><a href="#services" data-i18n="nav_services">Services</a></li>
+          <li><a href="#tour" data-i18n="nav_tour">Shop tour</a></li>
+          <li><a href="#visit" data-i18n="nav_visit">Visit us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="foot_contact">Contact</h3>
+        <ul>
+          <li><a class="ltr" href="tel:+923306575575">0330-6575575</a></li>
+          <li><a class="ltr" href="tel:+923077080970">0307-7080970</a></li>
+          <li data-i18n="top_addr">Baldia Chowk, Naseem Hayat Road, Kasur</li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">&copy; <span id="year">2026</span> <span data-i18n="copy">Chand Battery Traders. All rights reserved.</span></p>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/923306575575" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg class="icon"><use href="#i-wa"/></svg></a>
+<div class="mobile-bar">
+  <a class="btn btn-gold" href="tel:+923306575575"><svg class="icon"><use href="#i-phone"/></svg><span data-i18n="btn_call">Call</span></a>
+  <a class="btn btn-wa" href="https://wa.me/923306575575" target="_blank" rel="noopener"><svg class="icon"><use href="#i-wa"/></svg><span data-i18n="btn_wa">WhatsApp</span></a>
+</div>
+
+<script>
+/* =====================================================================
+   A. SETTINGS - change your phone / WhatsApp number here
+   ===================================================================== */
+const WHATSAPP = "923306575575";   // country code + number, no + or dashes
+
+/* =====================================================================
+   B. PRODUCTS - your price list. To add / edit / remove a battery,
+   just change a line. Fields:
+     b = brand, m = model, ah = capacity, p = plates (null if not listed),
+     price = price in Rs.
+   Optional: img: "assets/my-photo.jpg"  (shows your own photo instead of the drawing)
+   ===================================================================== */
+const PRODUCTS = [
+  // 5 plates
+  {b:"Osaka",   m:"HT-S50",      ah:22,  p:5,  price:5500},
+  {b:"Osaka",   m:"HT-1800",     ah:185, p:5,  price:38000},
+  // 6 & 7 plates
+  {b:"Phoenix", m:"RCK-50",      ah:24,  p:6,  price:7500},
+  {b:"Alaska",  m:"A-55",        ah:32,  p:7,  price:7500},
+  // 9 plates
+  {b:"Phoenix", m:"XP-60R/L",    ah:32,  p:9,  price:9500},
+  {b:"Osaka",   m:"OMF-55/60",   ah:38,  p:9,  price:9800},
+  {b:"Phoenix", m:"UGS-60",      ah:40,  p:9,  price:9500},
+  {b:"Phoenix", m:"EM-65R/L",    ah:40,  p:9,  price:11500},
+  {b:"Phoenix", m:"SOLAR-100",   ah:60,  p:9,  price:14500},
+  // 11 plates
+  {b:"AGS",     m:"SP-70",       ah:38,  p:11, price:12500},
+  {b:"Osaka",   m:"OMF-70",      ah:48,  p:11, price:12000},
+  {b:"Phoenix", m:"EM-70R/L",    ah:50,  p:11, price:13500},
+  {b:"Osaka",   m:"HT-115+",     ah:72,  p:11, price:14000},
+  {b:"Phoenix", m:"XP-100R",     ah:72,  p:11, price:16000},
+  // 12 & 13 plates
+  {b:"Phoenix", m:"XP-75R/L",    ah:55,  p:12, price:13000},
+  {b:"Phoenix", m:"XP-115R",     ah:80,  p:13, price:15800},
+  // 15 plates
+  {b:"Osaka",   m:"HT-135",      ah:100, p:15, price:19500},
+  {b:"Phoenix", m:"EXT-135",     ah:100, p:15, price:20500},
+  // 17 plates
+  {b:"AGS",     m:"SP-140",      ah:100, p:17, price:25500},
+  {b:"Osaka",   m:"HT-145",      ah:105, p:17, price:21500},
+  {b:"Phoenix", m:"XP-150/160",  ah:110, p:17, price:22500},
+  {b:"Phoenix", m:"UGS-160",     ah:115, p:17, price:23500},
+  // 19 plates
+  {b:"AGS",     m:"SP-150",      ah:105, p:19, price:29000},
+  {b:"Osaka",   m:"HT-160",      ah:115, p:19, price:23000},
+  {b:"Phoenix", m:"XP-165",      ah:115, p:19, price:25500},
+  // 21 plates
+  {b:"Osaka",   m:"HT-200",      ah:120, p:21, price:25500},
+  {b:"Phoenix", m:"XP-200",      ah:130, p:21, price:29000},
+  {b:"Phoenix", m:"UGS-210",     ah:140, p:21, price:28500},
+  // 23 plates
+  {b:"Phoenix", m:"XP-220",      ah:140, p:23, price:30000},
+  {b:"Osaka",   m:"HT-230",      ah:150, p:23, price:30000},
+  {b:"Phoenix", m:"UGS-235",     ah:170, p:23, price:32500},
+  // 25 & 27 plates
+  {b:"Osaka",   m:"HT-270",      ah:180, p:27, price:35000},
+  {b:"Phoenix", m:"UGS-250",     ah:180, p:25, price:37000},
+  // Other models
+  {b:"Phoenix", m:"DIN-666",     ah:60,  p:null, price:24000}
+];
+
+/* Colour used for each brand's battery drawing. Add a new brand here if needed. */
+const BRAND_COLORS = {Osaka:"#1B4DB1", Phoenix:"#C8202B", AGS:"#C96A0A", Alaska:"#0E8A85"};
+
+/* =====================================================================
+   C. TEXT (English + Urdu). Edit any wording here.
+   ===================================================================== */
+const T = {
+  en:{
+    top_addr:"Baldia Chowk, Naseem Hayat Road, Kasur",
+    brand_name:"Chand Battery Traders", brand_sub:"چاند بیٹری ٹریڈرز",
+    search_label:"Search batteries", search_ph:"Search model or brand",
+    btn_call:"Call", btn_wa:"WhatsApp", btn_dir:"Get directions",
+    nav_home:"Home", nav_prices:"Price list", nav_services:"Services", nav_tour:"Shop tour", nav_visit:"Visit us",
+    hero_title:"Car, solar and UPS batteries all over in Pakistan",
+    hero_lead:"Osaka, Phoenix, AGS and Alaska. Check the price list, then call or WhatsApp to confirm the rate.",
+    finder_title:"Find your battery", f_brand:"Brand", f_ah:"Capacity", f_plates:"Plates", finder_btn:"Show batteries",
+    any_brand:"All brands", any_ah:"Any capacity", any_plates:"Any plates",
+    t1_h:"Wholesale dealer", t1_p:"Car, solar and UPS batteries",
+    t2_h:"All major brands", t2_p:"Deep cycle and starter batteries",
+    t3_h:"Testing and charging", t3_p:"Available at the shop",
+    t4_h:"Confirm the rate", t4_p:"Prices can change. Call before you visit.",
+    shop_title:"Battery price list", shop_sub:"Prices in Pakistani rupees (Rs.), listed by number of plates.",
+    filters:"Filters", clear_all:"Clear all", f_brand_h:"Brand", f_plates_h:"Plates", f_ah_h:"Capacity (AH)", f_price_h:"Price (Rs.)",
+    min:"Min", max:"Max", other:"Other",
+    ah_1:"Up to 40 AH", ah_2:"41 to 80 AH", ah_3:"81 to 120 AH", ah_4:"121 to 180 AH", ah_5:"Above 180 AH",
+    sort_label:"Sort by", sort_plates:"Plates: low to high", sort_pl:"Price: low to high", sort_ph:"Price: high to low", sort_ah:"Capacity: high to low", sort_name:"Name A to Z",
+    count:"Showing {n} of {t} batteries",
+    plates_n:"{n} plates", plates_other:"Other model", rs:"Rs.",
+    card_wa:"WhatsApp", card_call:"Call about this battery",
+    wa_msg:"Assalam o Alaikum, I would like to know about the {brand} {model} ({ah} AH) battery. Is it available?",
+    empty_h:"No battery matches these filters", empty_p:"Clear the filters, or ask us on WhatsApp. We may have it in the shop.",
+    empty_wa:"Ask on WhatsApp",
+    price_note:"Prices are a guide and can change. Please confirm the latest rate by call or WhatsApp.",
+    svc_title:"What we sell and do",
+    s1_h:"Car batteries", s1_p:"Starter batteries for every type of car.",
+    s2_h:"Solar batteries", s2_p:"Deep cycle batteries for solar systems.",
+    s3_h:"UPS batteries", s3_p:"Batteries for UPS and inverter backup.",
+    s4_h:"Testing and charging", s4_p:"Bring your battery in and we will test and charge it.",
+    tour_title:"A look inside the shop", tour_p:"Racks stocked with Osaka, Phoenix, AGS, Alaska and more. Come to Baldia Chowk and see the batteries in person.",
+    visit_title:"Visit the shop", addr_label:"Address", addr_full:"Baldia Chowk, Naseem Hayat Road, near Islamia Boys School, Kasur", phone_label:"Phone",
+    foot_about:"Solar system, UPS and car batteries. Deep cycle and starter batteries from all major brands, with testing and charging at the shop.",
+    foot_links:"Quick links", foot_contact:"Contact", copy:"Chand Battery Traders. All rights reserved.",
+    lang_btn:"اردو"
+  },
+  ur:{
+    top_addr:"بلدیہ چوک، نسیم حیات روڈ، قصور",
+    brand_name:"چاند بیٹری ٹریڈرز", brand_sub:"Chand Battery Traders",
+    search_label:"بیٹری تلاش کریں", search_ph:"ماڈل یا کمپنی لکھیں",
+    btn_call:"کال کریں", btn_wa:"واٹس ایپ", btn_dir:"راستہ دیکھیں",
+    nav_home:"ہوم", nav_prices:"ریٹ لسٹ", nav_services:"خدمات", nav_tour:"دکان کی جھلک", nav_visit:"ہم سے ملیں",
+    hero_title:"قصور میں گاڑی، سولر اور یو پی ایس کی بیٹریاں",
+    hero_lead:"اوساکا، فینکس، اے جی ایس اور الاسکا۔ ریٹ لسٹ دیکھیں، پھر کال یا واٹس ایپ پر ریٹ کی تصدیق کریں۔",
+    finder_title:"اپنی بیٹری تلاش کریں", f_brand:"کمپنی", f_ah:"ایمپیئر", f_plates:"پلیٹس", finder_btn:"بیٹریاں دکھائیں",
+    any_brand:"تمام کمپنیاں", any_ah:"کوئی بھی ایمپیئر", any_plates:"کوئی بھی پلیٹس",
+    t1_h:"ہول سیل ڈیلر", t1_p:"گاڑی، سولر اور یو پی ایس کی بیٹریاں",
+    t2_h:"تمام بڑے برانڈز", t2_p:"ڈیپ سائیکل اور اسٹارٹر بیٹریاں",
+    t3_h:"ٹیسٹنگ اور چارجنگ", t3_p:"دکان پر دستیاب ہے",
+    t4_h:"ریٹ کی تصدیق کریں", t4_p:"قیمتیں بدل سکتی ہیں۔ آنے سے پہلے کال کریں۔",
+    shop_title:"بیٹریوں کی ریٹ لسٹ", shop_sub:"قیمتیں پاکستانی روپے (Rs.) میں، پلیٹوں کی ترتیب سے۔",
+    filters:"فلٹر", clear_all:"سب ہٹائیں", f_brand_h:"کمپنی", f_plates_h:"پلیٹس", f_ah_h:"ایمپیئر (AH)", f_price_h:"قیمت (Rs.)",
+    min:"کم از کم", max:"زیادہ سے زیادہ", other:"دیگر",
+    ah_1:"40 AH تک", ah_2:"41 سے 80 AH", ah_3:"81 سے 120 AH", ah_4:"121 سے 180 AH", ah_5:"180 AH سے اوپر",
+    sort_label:"ترتیب", sort_plates:"پلیٹس: کم سے زیادہ", sort_pl:"قیمت: کم سے زیادہ", sort_ph:"قیمت: زیادہ سے کم", sort_ah:"ایمپیئر: زیادہ سے کم", sort_name:"نام کے مطابق",
+    count:"{t} میں سے {n} بیٹریاں",
+    plates_n:"{n} پلیٹ", plates_other:"دیگر ماڈل", rs:"Rs.",
+    card_wa:"واٹس ایپ", card_call:"اس بیٹری کے بارے میں کال کریں",
+    wa_msg:"السلام علیکم، مجھے {brand} {model} ({ah} AH) بیٹری کے بارے میں معلومات چاہییں۔ کیا یہ دستیاب ہے؟",
+    empty_h:"ان فلٹرز کے مطابق کوئی بیٹری نہیں ملی", empty_p:"فلٹر ہٹا دیں یا واٹس ایپ پر پوچھیں۔ ہو سکتا ہے دکان پر موجود ہو۔",
+    empty_wa:"واٹس ایپ پر پوچھیں",
+    price_note:"قیمتیں صرف رہنمائی کے لیے ہیں اور بدل سکتی ہیں۔ تازہ ریٹ کال یا واٹس ایپ پر معلوم کر لیں۔",
+    svc_title:"ہماری خدمات",
+    s1_h:"گاڑی کی بیٹریاں", s1_p:"ہر قسم کی گاڑی کے لیے اسٹارٹر بیٹریاں۔",
+    s2_h:"سولر بیٹریاں", s2_p:"سولر سسٹم کے لیے ڈیپ سائیکل بیٹریاں۔",
+    s3_h:"یو پی ایس بیٹریاں", s3_p:"یو پی ایس اور انورٹر بیک اپ کے لیے بیٹریاں۔",
+    s4_h:"ٹیسٹنگ اور چارجنگ", s4_p:"اپنی بیٹری لائیں، ہم ٹیسٹ اور چارج کر دیں گے۔",
+    tour_title:"دکان کی ایک جھلک", tour_p:"اوساکا، فینکس، اے جی ایس، الاسکا اور دیگر بیٹریوں سے بھرے ریک۔ بلدیہ چوک آئیں اور بیٹری خود دیکھیں۔",
+    visit_title:"دکان پر تشریف لائیں", addr_label:"پتہ", addr_full:"بلدیہ چوک، نسیم حیات روڈ، نزد اسلامیہ بوائز اسکول، قصور", phone_label:"رابطہ",
+    foot_about:"سولر سسٹم، یو پی ایس اور ہر قسم کی گاڑی کی بیٹریاں۔ تمام برانڈز کی ڈیپ سائیکل اور اسٹارٹر بیٹریاں، دکان پر ٹیسٹنگ اور چارجنگ کی سہولت کے ساتھ۔",
+    foot_links:"اہم لنکس", foot_contact:"رابطہ", copy:"چاند بیٹری ٹریڈرز۔ جملہ حقوق محفوظ ہیں۔",
+    lang_btn:"English"
+  }
+};
+
+/* =====================================================================
+   D. CODE - you normally do not need to edit below this line
+   ===================================================================== */
+const AH_RANGES = [
+  {id:"1", lo:0,   hi:40},
+  {id:"2", lo:41,  hi:80},
+  {id:"3", lo:81,  hi:120},
+  {id:"4", lo:121, hi:180},
+  {id:"5", lo:181, hi:9999}
+];
+const $ = (s, r=document) => r.querySelector(s);
+const fmtNum = n => n.toLocaleString("en-US");
+const fill = (s, o) => s.replace(/\{(\w+)\}/g, (_, k) => o[k]);
+
+let lang = "en";
+try { lang = localStorage.getItem("cbt-lang") || "en"; } catch(e){}
+const t = k => T[lang][k] ?? T.en[k] ?? k;
+
+const state = { q:"", brands:new Set(), plates:new Set(), ah:"", min:"", max:"", sort:"plates" };
+
+const BRANDS = [...new Set([...Object.keys(BRAND_COLORS), ...PRODUCTS.map(p => p.b)])].filter(b => PRODUCTS.some(p => p.b === b));
+const PLATE_LIST = [...new Set(PRODUCTS.map(p => p.p).filter(Boolean))].sort((a,b)=>a-b);
+const HAS_OTHER = PRODUCTS.some(p => p.p === null);
+
+/* ---------- battery drawing (SVG) ---------- */
+function batteryArt(p){
+  const c = BRAND_COLORS[p.b] || "#334";
+  const name = p.b.toUpperCase();
+  return `<svg viewBox="0 0 200 128" role="img" aria-label="${p.b} ${p.m} battery" xmlns="http://www.w3.org/2000/svg">
+    <rect x="34" y="8" width="26" height="14" rx="3" fill="#3b4256"/>
+    <rect x="140" y="8" width="26" height="14" rx="3" fill="#3b4256"/>
+    <rect x="8" y="18" width="184" height="18" rx="6" fill="#20263a"/>
+    <circle cx="60" cy="27" r="3.2" fill="#5b6480"/><circle cx="100" cy="27" r="3.2" fill="#5b6480"/><circle cx="140" cy="27" r="3.2" fill="#5b6480"/>
+    <rect x="8" y="34" width="184" height="88" rx="8" fill="${c}"/>
+    <rect x="8" y="106" width="184" height="16" rx="8" fill="rgba(0,0,0,.22)"/>
+    <rect x="30" y="48" width="140" height="50" rx="6" fill="#fff"/>
+    <text x="100" y="72" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="24" fill="${c}" letter-spacing=".5">${name}</text>
+    <text x="100" y="90" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="600" font-size="14" fill="#3b4256">12V  ${p.ah}AH</text>
+  </svg>`;
+}
+
+/* ---------- filtering + sorting ---------- */
+function getFiltered(){
+  const q = state.q.trim().toLowerCase();
+  const range = AH_RANGES.find(r => r.id === state.ah);
+  const min = state.min === "" ? null : +state.min;
+  const max = state.max === "" ? null : +state.max;
+  let list = PRODUCTS.filter(p => {
+    if (q && !(`${p.b} ${p.m}`.toLowerCase().includes(q))) return false;
+    if (state.brands.size && !state.brands.has(p.b)) return false;
+    if (state.plates.size){
+      const key = p.p === null ? "other" : String(p.p);
+      if (!state.plates.has(key)) return false;
+    }
+    if (range && (p.ah < range.lo || p.ah > range.hi)) return false;
+    if (min !== null && p.price < min) return false;
+    if (max !== null && p.price > max) return false;
+    return true;
+  });
+  const by = {
+    plates:(a,b)=> ((a.p ?? 999)-(b.p ?? 999)) || (a.price-b.price),
+    pl:(a,b)=> a.price-b.price,
+    ph:(a,b)=> b.price-a.price,
+    ah:(a,b)=> b.ah-a.ah,
+    name:(a,b)=> (a.b+a.m).localeCompare(b.b+b.m)
+  };
+  return list.sort(by[state.sort]);
+}
+
+/* ---------- rendering ---------- */
+function waLink(text){ return `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`; }
+
+function renderCards(){
+  const list = getFiltered();
+  $("#resultCount").textContent = fill(t("count"), {n:list.length, t:PRODUCTS.length});
+  const grid = $("#grid");
+  if (!list.length){
+    grid.innerHTML = `<div class="empty"><h3>${t("empty_h")}</h3><p>${t("empty_p")}</p>
+      <button class="btn btn-line" type="button" id="emptyClear">${t("clear_all")}</button>
+      <a class="btn btn-wa" target="_blank" rel="noopener" href="${waLink(t("empty_h"))}">${t("empty_wa")}</a></div>`;
+    $("#emptyClear").onclick = clearAll;
+  } else {
+    grid.innerHTML = list.map(p => {
+      const color = BRAND_COLORS[p.b] || "#334";
+      const msg = fill(t("wa_msg"), {brand:p.b, model:p.m, ah:p.ah});
+      const plates = p.p === null ? t("plates_other") : fill(t("plates_n"), {n:p.p});
+      const art = p.img ? `<img src="${p.img}" alt="${p.b} ${p.m}" loading="lazy" style="width:100%;aspect-ratio:200/128;object-fit:contain">` : batteryArt(p);
+      return `<article class="card" style="--brand:${color}">
+        <div class="art">${art}<span class="plates-tag">${plates}</span></div>
+        <div class="body">
+          <p class="brand">${p.b}</p>
+          <h3 class="model ltr">${p.m}</h3>
+          <p class="ah"><b>${p.ah}</b> AH</p>
+          <p class="price"><small>${t("rs")}</small>${fmtNum(p.price)}</p>
+          <div class="actions">
+            <a class="btn btn-wa" target="_blank" rel="noopener" href="${waLink(msg)}"><svg class="icon"><use href="#i-wa"/></svg><span>${t("card_wa")}</span></a>
+            <a class="btn btn-line" href="tel:+${WHATSAPP}" aria-label="${t("card_call")}"><svg class="icon"><use href="#i-phone"/></svg></a>
+          </div>
+        </div></article>`;
+    }).join("");
+  }
+  const active = state.brands.size + state.plates.size + (state.ah?1:0) + (state.min!==""?1:0) + (state.max!==""?1:0);
+  $("#filterBadge").textContent = active ? `(${active})` : "";
+}
+
+function buildFilters(){
+  const counts = b => PRODUCTS.filter(p => p.b === b).length;
+  $("#filters").innerHTML = `
+    <div class="f-head"><h3>${t("filters")}</h3><button class="link-btn" type="button" id="clearBtn">${t("clear_all")}</button></div>
+    <div class="f-group"><h4>${t("f_brand_h")}</h4>
+      ${BRANDS.map(b => `<label class="check"><input type="checkbox" data-brand="${b}" ${state.brands.has(b)?"checked":""}><span>${b}</span><span class="count">${counts(b)}</span></label>`).join("")}
+    </div>
+    <div class="f-group"><h4>${t("f_plates_h")}</h4><div class="chips">
+      ${PLATE_LIST.map(n => `<button class="chip" type="button" data-plate="${n}" aria-pressed="${state.plates.has(String(n))}">${n}</button>`).join("")}
+      ${HAS_OTHER ? `<button class="chip" type="button" data-plate="other" aria-pressed="${state.plates.has("other")}">${t("other")}</button>` : ""}
+    </div></div>
+    <div class="f-group"><h4>${t("f_ah_h")}</h4>
+      ${AH_RANGES.map(r => `<label class="check"><input type="radio" name="ah" value="${r.id}" ${state.ah===r.id?"checked":""}><span>${t("ah_"+r.id)}</span></label>`).join("")}
+    </div>
+    <div class="f-group"><h4>${t("f_price_h")}</h4><div class="price-row">
+      <input type="number" inputmode="numeric" min="0" id="pMin" placeholder="${t("min")}" aria-label="${t("min")}" value="${state.min}">
+      <input type="number" inputmode="numeric" min="0" id="pMax" placeholder="${t("max")}" aria-label="${t("max")}" value="${state.max}">
+    </div></div>`;
+
+  $("#clearBtn").onclick = clearAll;
+  document.querySelectorAll("[data-brand]").forEach(el => el.onchange = () => {
+    el.checked ? state.brands.add(el.dataset.brand) : state.brands.delete(el.dataset.brand); renderCards();
+  });
+  document.querySelectorAll("[data-plate]").forEach(el => el.onclick = () => {
+    const k = el.dataset.plate;
+    state.plates.has(k) ? state.plates.delete(k) : state.plates.add(k);
+    el.setAttribute("aria-pressed", state.plates.has(k)); renderCards();
+  });
+  document.querySelectorAll('input[name="ah"]').forEach(el => el.onchange = () => { state.ah = el.value; renderCards(); });
+  $("#pMin").oninput = e => { state.min = e.target.value; renderCards(); };
+  $("#pMax").oninput = e => { state.max = e.target.value; renderCards(); };
+}
+
+function clearAll(){
+  Object.assign(state, {q:"", brands:new Set(), plates:new Set(), ah:"", min:"", max:""});
+  $("#searchInput").value = "";
+  $("#fBrand").value = ""; $("#fAh").value = ""; $("#fPlates").value = "";
+  buildFilters(); renderCards();
+}
+
+function buildSelects(){
+  const keep = {b:$("#fBrand").value, a:$("#fAh").value, p:$("#fPlates").value};
+  $("#fBrand").innerHTML = `<option value="">${t("any_brand")}</option>` + BRANDS.map(b=>`<option>${b}</option>`).join("");
+  $("#fAh").innerHTML = `<option value="">${t("any_ah")}</option>` + AH_RANGES.map(r=>`<option value="${r.id}">${t("ah_"+r.id)}</option>`).join("");
+  $("#fPlates").innerHTML = `<option value="">${t("any_plates")}</option>` + PLATE_LIST.map(n=>`<option value="${n}">${n}</option>`).join("") + (HAS_OTHER?`<option value="other">${t("other")}</option>`:"");
+  $("#fBrand").value = keep.b; $("#fAh").value = keep.a; $("#fPlates").value = keep.p;
+  const opts = [["plates","sort_plates"],["pl","sort_pl"],["ph","sort_ph"],["ah","sort_ah"],["name","sort_name"]];
+  $("#sortSel").innerHTML = opts.map(([v,k])=>`<option value="${v}">${t(k)}</option>`).join("");
+  $("#sortSel").value = state.sort;
+}
+
+/* ---------- language ---------- */
+function applyLang(){
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === "ur" ? "rtl" : "ltr";
+  document.querySelectorAll("[data-i18n]").forEach(el => el.textContent = t(el.dataset.i18n));
+  document.querySelectorAll("[data-i18n-ph]").forEach(el => el.placeholder = t(el.dataset.i18nPh));
+  $("#langBtn").textContent = t("lang_btn");
+  buildSelects(); buildFilters(); renderCards();
+}
+
+/* ---------- events ---------- */
+$("#langBtn").onclick = () => {
+  lang = lang === "en" ? "ur" : "en";
+  try { localStorage.setItem("cbt-lang", lang); } catch(e){}
+  applyLang();
+};
+$("#searchInput").oninput = e => { state.q = e.target.value; renderCards(); };
+$("#sortSel").onchange = e => { state.sort = e.target.value; renderCards(); };
+$("#filtersToggle").onclick = () => $("#filters").classList.toggle("open");
+$("#finder").onsubmit = e => {
+  e.preventDefault();
+  const b = $("#fBrand").value, a = $("#fAh").value, p = $("#fPlates").value;
+  state.brands = new Set(b ? [b] : []);
+  state.ah = a;
+  state.plates = new Set(p ? [p] : []);
+  buildFilters(); renderCards();
+  $("#prices").scrollIntoView({behavior:"smooth"});
+};
+$("#year").textContent = new Date().getFullYear();
+
+applyLang();
+</script>
+</body>
+</html>
